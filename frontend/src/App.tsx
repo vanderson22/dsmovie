@@ -1,7 +1,13 @@
- 
+import Navbar from "./components/Navbar";
+
+
+
 function App() {
   return (
-        <h1 > Página principal</h1>
+
+    //componente Navbar em index.tsx de componentes
+    <Navbar />
+
   );
 }
 
