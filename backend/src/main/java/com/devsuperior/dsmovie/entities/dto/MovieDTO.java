@@ -1,4 +1,6 @@
-package com.devsuperior.dsmovie.entities;
+package com.devsuperior.dsmovie.entities.dto;
+
+import com.devsuperior.dsmovie.entities.Movie;
 
 public class MovieDTO {
 

@@ -6,7 +6,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.devsuperior.dsmovie.entities.MovieDTO;
+import com.devsuperior.dsmovie.entities.dto.MovieDTO;
 import com.devsuperior.dsmovie.repositories.MovieRepository;
 
 @Service
