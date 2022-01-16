@@ -29,7 +29,7 @@ function Listing() {
     useEffect(() => {
         // executa apenas uma vez de acordo com ciclo de vida. init - destroy
         axios
-            .get(`${BASE_url}/movies?size=10&page=${numeroPagina}`)
+            .get(`${BASE_url}/movies?size=10&page=${numeroPagina}&sort=score,desc`)
             .then(
                 resposta => {
                     //resposta da api
