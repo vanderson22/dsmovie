@@ -7,15 +7,7 @@ import { BASE_url } from "utils/requests";
 
 function Listing() {
 
-    const movie = {
-        id: 1,
-        image: "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg",
-        title: "The Witcher",
-        count: 2,
-        score: 4.5
-    }
-
-
+     
     // em português, fora do padrão, para lembrar a função useState
     // manter estado na aplicação.
     const [numeroPagina, setNumeroPagina] = useState(0);
@@ -37,7 +29,7 @@ function Listing() {
     useEffect(() => {
         // executa apenas uma vez de acordo com ciclo de vida. init - destroy
         axios
-            .get(`${BASE_url}/movies?size=10&page=${numeroPagina}&sort=title`)
+            .get(`${BASE_url}/movies?size=10&page=${numeroPagina}`)
             .then(
                 resposta => {
                     //resposta da api
