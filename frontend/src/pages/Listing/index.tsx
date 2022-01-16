@@ -42,9 +42,16 @@ function Listing() {
 
     }, [numeroPagina]);
 
+    const handlePageChange = (newPageNumber : number) =>{
+        //Quando o número da pagina mudou de valor, uma nova requisição com useEffect é realizado.
+        setNumeroPagina(newPageNumber); 
+    
+    };
     return (
         <>
-            <Pagination />
+
+          {/*enviando função  handlePageChange */}
+            <Pagination  page={page} onChange={handlePageChange} />
             <div className="container">
                 <div className="row">
                     {page.content.map(item => (
