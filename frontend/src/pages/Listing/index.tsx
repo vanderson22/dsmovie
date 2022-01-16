@@ -57,8 +57,8 @@ function Listing() {
                     {page.content.map(item => (
 
                         //   {/*    ocupa 6 colunas das 12 colunas do grid system do bootstrap  */ }
-                        < div className="col-sm-6 col-lg-4 col-xl-3 mb-3" >
-                            <MovieCard movie={item} key={item.id} />
+                        < div className="col-sm-6 col-lg-4 col-xl-3 mb-3" key={item.id}>
+                            <MovieCard  key={item.id} movie={item} />
                         </div>
 
                     )
